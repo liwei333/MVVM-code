@@ -95,9 +95,9 @@ export function construcProxy(vm, obj, namespace) {
 }
 
 function getNameSpace(nowNameSpace, nowProp) {
-    if (nowNameSpace = null || nowNameSpace == "") {
+    if (nowNameSpace == null || nowNameSpace == "") {
         return nowProp;
-    } else if (nowProp = null || nowProp == "") {
+    } else if (nowProp == null || nowProp == "") {
         return nowNameSpace;
     } else {
         return nowNameSpace + "." + nowProp;
